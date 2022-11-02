@@ -1,0 +1,82 @@
+:root {
+    --main-primary: #980026;
+    --main-primary-highlight: #fe003f;
+    --main-secondary: #3e96ee;
+    --main-white: #f9fffc;
+    --main-white-dark: #ecdbcb;
+    --main-highlight: #fc7302;
+    --main-secondary-highlight: #a5e24f;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+
+/* ROW GENERIC */
+
+.chadVar {
+    border-top: 0.1px solid rgb(0 0 0 / 18%);
+}
+
+.chadVar:nth-last-child(2) {
+    border-bottom: 0.1px solid rgb(0 0 0 / 18%);
+}
+
+
+/* MUTED SCORE TEXT */
+
+.score-muted {
+    color: rgba(0, 0, 0, 0.541);
+    font-weight: normal;
+}
+
+input[type="radio"]:checked+label>.score-muted {
+    color: rgb(239 255 0);
+}
+
+
+/* BUTTON STYLINGS */
+
+.btn {
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    width: 8em;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--main-primary);
+    border-color: var(--main-primary);
+    color: var(--main-white);
+    font-weight: bold;
+}
+
+.calculate-btn {
+    background-color: var(--main-highlight);
+    border: none;
+    border-radius: 15px;
+    color: var(--main-white)
+}
+
+
+/* ANSWER BOX */
+
+.answerBox {
+    background-color: #15734754;
+    border-radius: 25px;
+    color: black;
+}
+
+.risk-number {
+    color: var(--main-primary);
+    font-weight: bold;
+}
+
+
+/* LOGO PICTURE */
+
+.logo {
+    width: 10em;
+    height: 10em;
+}
